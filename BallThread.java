@@ -3,7 +3,7 @@ package bounceball;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-import javax.swing.event.*;
+import javax.swing.event.*;//  gggggggggggggggggggggggggggggggggggg
 
 public class BallThread extends JPanel implements Runnable{
 	Image ballImg1 = new ImageIcon("Image/ball1.png").getImage();
@@ -16,11 +16,11 @@ public class BallThread extends JPanel implements Runnable{
 	BallThread(GamePanel gamePanel, ScoreLabel scoreLabel){
 		this.gamePanel2 = gamePanel;
 		this.scoreLabel = scoreLabel;
-		this.setOpaque(false); // ÆÇ³ÚÀ» ºÒÅõ¸íÇÏ°Ô ÇÑ´Ù.
+		this.setOpaque(false); // íŒë„¬ì„ ë¶ˆíˆ¬ëª…í•˜ê²Œ í•œë‹¤.
 	}
 	
 	@Override
-	public void paintComponent(Graphics g){ // barÀÌ¹ÌÁö¸¦ ±×¸°´Ù.
+	public void paintComponent(Graphics g){ // barì´ë¯¸ì§€ë¥¼ ê·¸ë¦°ë‹¤.
 		super.paintComponent(g);
 		g.drawImage(ballImg1, x, y, 30, 30, this);
 	}
